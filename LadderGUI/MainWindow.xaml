@@ -6,26 +6,28 @@
         xmlns:local="clr-namespace:LadderGUI"
         mc:Ignorable="d"
         Title="LadderGUI" Height="600" Width="1000">
-	<Grid>
-		<Rectangle Fill="#FFF4F4F5" Margin="10" Stroke="Black" StrokeThickness="1"/>
-		<Rectangle Fill="#FFF4F4F5" Margin="22,23,22,0" Stroke="Black" StrokeThickness="1" Height="112" VerticalAlignment="Top"/>
-		<Label x:Name="label" VerticalContentAlignment="Center"  Content="Ladder Manager Path:" HorizontalAlignment="Left" Height="38" Margin="35,35,0,0" VerticalAlignment="Top" Width="214" FontSize="16"/>
-		<TextBox x:Name="textBoxLadderExe" VerticalContentAlignment="Center" Height="38" Margin="249,35,159,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16" />
-		<Label x:Name="label_Copy" VerticalContentAlignment="Center"  Content="Starcraft II Path:" HorizontalAlignment="Left" Height="38" Margin="35,79,0,0" VerticalAlignment="Top" Width="214" FontSize="16"/>
-		<TextBox x:Name="textBoxStarcraftExe" VerticalContentAlignment="Center" Height="38" Margin="249,79,159,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
-		<ListBox x:Name="listBoxMaps" HorizontalAlignment="Left" Margin="35,191,0,40" Width="294" SelectionMode="Extended" SelectionChanged="listBox_SelectionChanged" Panel.ZIndex="10"/>
-		<Label x:Name="label_Copy1" VerticalContentAlignment="Center"  Content="Maps:" HorizontalAlignment="Left" Height="38" Margin="35,158,0,0" VerticalAlignment="Top" Width="321" FontSize="16" Panel.ZIndex="10"/>
-		<Rectangle Fill="#FFF4F4F5" Margin="22,145,0,24" Stroke="Black" StrokeThickness="1" HorizontalAlignment="Left" Width="687"/>
-		<Label x:Name="label_Copy2" VerticalContentAlignment="Center"  Content="Player 1:" HorizontalAlignment="Left" Height="38" Margin="344,158,0,0" VerticalAlignment="Top" Width="167" FontSize="16" Panel.ZIndex="10"/>
-		<ListBox x:Name="listBoxPlayer1" HorizontalAlignment="Left" Margin="344,191,0,40" Width="167" SelectionMode="Extended" SelectionChanged="listBox_SelectionChanged" Panel.ZIndex="10"/>
-		<Label x:Name="label_Copy3" VerticalContentAlignment="Center"  Content="Player 2:" HorizontalAlignment="Left" Height="38" Margin="527,158,0,0" VerticalAlignment="Top" Width="167" FontSize="16" Panel.ZIndex="10"/>
-		<ListBox x:Name="listBoxPlayer2" HorizontalAlignment="Left" Margin="527,191,0,40" Width="167" SelectionMode="Extended" SelectionChanged="listBox_SelectionChanged" Panel.ZIndex="10"/>
-		<Label x:Name="label_Copy4" VerticalContentAlignment="Center"  Content="Iterations:" HorizontalAlignment="Left" Height="38" Margin="737,158,0,0" VerticalAlignment="Top" Width="96" FontSize="16" Panel.ZIndex="10"/>
-		<Rectangle Fill="#FFF4F4F5" Margin="725,145,22,0" Stroke="Black" StrokeThickness="1" Height="329" VerticalAlignment="Top"/>
-		<TextBox x:Name="textBoxIterations" VerticalContentAlignment="Center" Height="38" Margin="838,158,34,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16" TextChanged="textBoxIterations_TextChanged"/>
-		<TextBlock x:Name="textBlockInfo" TextWrapping="WrapWithOverflow" Height="200" Margin="737,217,34,0" VerticalAlignment="Top" FontSize="14" Text="Info"/>
-		<Button x:Name="buttonGenerate" Content="Generate &amp; Run" Height="38" Margin="737,422,34,0" VerticalAlignment="Top" Click="button_Click"/>
-		<Button x:Name="buttonSelectLadderManager" Content="Select" Height="38" Margin="0,35,34,0" VerticalAlignment="Top" Click="button_Click" HorizontalAlignment="Right" Width="120"/>
-		<Button x:Name="buttonSelectStarcraft" Content="Select" Height="38" Margin="0,79,34,0" VerticalAlignment="Top" Click="button_Click" HorizontalAlignment="Right" Width="120"/>
-	</Grid>
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" Margin="10" Stroke="Black" StrokeThickness="1"/>
+        <Rectangle Fill="#FFF4F4F5" Margin="22,23,22,0" Stroke="Black" StrokeThickness="1" Height="112" VerticalAlignment="Top"/>
+        <Label x:Name="label" VerticalContentAlignment="Center"  Content="Ladder Manager Path:" HorizontalAlignment="Left" Height="38" Margin="35,35,0,0" VerticalAlignment="Top" Width="214" FontSize="16"/>
+        <TextBox x:Name="textBoxLadderExe" VerticalContentAlignment="Center" Height="38" Margin="249,35,159,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="label_Copy" VerticalContentAlignment="Center"  Content="Starcraft II Path:" HorizontalAlignment="Left" Height="38" Margin="35,79,0,0" VerticalAlignment="Top" Width="214" FontSize="16"/>
+        <TextBox x:Name="textBoxStarcraftExe" VerticalContentAlignment="Center" Height="38" Margin="249,79,159,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <ListBox x:Name="listBoxMaps" HorizontalAlignment="Left" Margin="35,191,0,40" Width="294" SelectionMode="Extended" SelectionChanged="listBox_SelectionChanged" Panel.ZIndex="10"/>
+        <Label x:Name="label_Copy1" VerticalContentAlignment="Center"  Content="Maps:" HorizontalAlignment="Left" Height="38" Margin="35,158,0,0" VerticalAlignment="Top" Width="321" FontSize="16" Panel.ZIndex="10"/>
+        <Rectangle Fill="#FFF4F4F5" Margin="22,145,0,24" Stroke="Black" StrokeThickness="1" HorizontalAlignment="Left" Width="687"/>
+        <Label x:Name="label_Copy2" VerticalContentAlignment="Center"  Content="Player 1:" HorizontalAlignment="Left" Height="38" Margin="344,158,0,0" VerticalAlignment="Top" Width="167" FontSize="16" Panel.ZIndex="10"/>
+        <ListBox x:Name="listBoxPlayer1" HorizontalAlignment="Left" Margin="344,191,0,40" Width="167" SelectionMode="Extended" SelectionChanged="listBox_SelectionChanged" Panel.ZIndex="10"/>
+        <Label x:Name="label_Copy3" VerticalContentAlignment="Center"  Content="Player 2:" HorizontalAlignment="Left" Height="38" Margin="527,158,0,0" VerticalAlignment="Top" Width="167" FontSize="16" Panel.ZIndex="10"/>
+        <ListBox x:Name="listBoxPlayer2" HorizontalAlignment="Left" Margin="527,191,0,40" Width="167" SelectionMode="Extended" SelectionChanged="listBox_SelectionChanged" Panel.ZIndex="10"/>
+        <Label x:Name="label_Copy4" VerticalContentAlignment="Center"  Content="Iterations:" HorizontalAlignment="Left" Height="38" Margin="737,158,0,0" VerticalAlignment="Top" Width="96" FontSize="16" Panel.ZIndex="10"/>
+        <Rectangle Fill="#FFF4F4F5" Margin="725,145,22,0" Stroke="Black" StrokeThickness="1" Height="329" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxIterations" VerticalContentAlignment="Center" Height="38" Margin="838,158,34,0" TextAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16" TextChanged="textBoxIterations_TextChanged"/>
+        <TextBlock x:Name="textBlockInfo" TextWrapping="WrapWithOverflow" Height="164" Margin="737,253,34,0" VerticalAlignment="Top" FontSize="14" Text="Info"/>
+        <Button x:Name="buttonGenerate" Content="Generate &amp; Run" Height="38" Margin="737,422,34,0" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="buttonSelectLadderManager" Content="Select" Height="38" Margin="0,35,34,0" VerticalAlignment="Top" Click="button_Click" HorizontalAlignment="Right" Width="120"/>
+        <Button x:Name="buttonSelectStarcraft" Content="Select" Height="38" Margin="0,79,34,0" VerticalAlignment="Top" Click="button_Click" HorizontalAlignment="Right" Width="120"/>
+        <Label x:Name="label_Copy5" VerticalContentAlignment="Center"  Content="Real-Time:" HorizontalAlignment="Left" Height="38" Margin="737,201,0,0" VerticalAlignment="Top" Width="96" FontSize="16" Panel.ZIndex="10"/>
+        <CheckBox x:Name="checkBoxRealTime" Content="" HorizontalAlignment="Left" Margin="838,215,0,0" VerticalAlignment="Top"/>
+    </Grid>
 </Window>

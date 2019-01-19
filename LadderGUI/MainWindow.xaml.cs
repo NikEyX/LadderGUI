@@ -252,11 +252,21 @@ namespace LadderGUI
             System.IO.File.WriteAllLines(mapListFile, mapLines);
 
 
+            //I'm not using json.net here since I don't want to require additional dependencies, so deal with it
+            var ladderManagerJson = System.IO.Path.Combine(GetLadderManagerFolder(), "LadderManager.json");
+            var content = File.ReadAllText(ladderManagerJson);
+            if ((checkBoxRealTime.IsChecked != null) && (bool) (checkBoxRealTime.IsChecked))
+                content = content.Replace("\"RealTimeMode\": false,", "\"RealTimeMode\": true,");
+            else
+                content = content.Replace("\"RealTimeMode\": true,", "\"RealTimeMode\": false,");
+            File.WriteAllText(ladderManagerJson, content);
+
+
             Int32.TryParse(textBoxIterations.Text, out var iterations);
 
             List<string> matchupLines = new List<string>();
 
-            for (var iteration=0; iteration <= iterations; iteration++) {
+            for (var iteration=0; iteration < iterations; iteration++) {
                 foreach (var itemMap in listBoxMaps.SelectedItems) {
                     var mapName = ((ListBoxItem) itemMap).Content.ToString();
                     foreach (var itemPlayer1 in listBoxPlayer1.SelectedItems) {
